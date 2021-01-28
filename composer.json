@@ -1,0 +1,20 @@
+{
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"autoload": {
+		"psr-4": {
+			"mdm\\syndication\\" : "includes",
+			"mdm\\syndication\\widgets\\" : "widgets",
+			"mdm\\syndication\\posttypes\\" : "posttypes",
+			"mdm\\syndication\\taxonomies\\" : "taxonomies",
+			"mdm\\syndication\\flbuilder\\" : "flbuilder"
+		}
+	},
+	"require": {
+		"wpcl/wpconsole": "^1.0"
+	},
+	"scripts": {
+		"post-install-cmd": "npm install",
+		"post-update-cmd": "npm install"
+	}
+}

@@ -1,0 +1,53 @@
+{
+    "packages": [
+        {
+            "name": "wpcl/wpconsole",
+            "version": "v1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bob-moore/wp-console.git",
+                "reference": "130d4b375261dd6b7fc0511dadafa870e7ef7370"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bob-moore/wp-console/zipball/130d4b375261dd6b7fc0511dadafa870e7ef7370",
+                "reference": "130d4b375261dd6b7fc0511dadafa870e7ef7370",
+                "shasum": ""
+            },
+            "time": "2021-01-15T20:17:24+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "wpcl\\wpconsole\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bob Moore",
+                    "email": "bobjutsu@gmail.com",
+                    "homepage": "https://www.bobmoore.dev"
+                }
+            ],
+            "description": "A simple package to log php to the browser console in WordPress plugins and themes",
+            "homepage": "https://github.com/bob-moore/wp-console",
+            "keywords": [
+                "console",
+                "logging",
+                "wordpress",
+                "wp"
+            ],
+            "support": {
+                "issues": "https://github.com/bob-moore/wp-console/issues",
+                "source": "https://github.com/bob-moore/wp-console/tree/v1.0.1"
+            },
+            "install-path": "../wpcl/wpconsole"
+        }
+    ],
+    "dev": true
+}
