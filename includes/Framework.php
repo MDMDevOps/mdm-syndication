@@ -6,7 +6,7 @@
  *
  * @link    https://www.midwestfamilymadison.com
  * @since   1.0.0
- * @package my_plugin_name
+ * @package mdm_syndication
  */
 
 namespace mdm\syndication;

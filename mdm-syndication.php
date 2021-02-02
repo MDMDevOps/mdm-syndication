@@ -5,18 +5,19 @@
  * This file also defines plugin parameters, registers the activation and deactivation functions, and defines a function that starts the plugin.
  * @link    https://www.midwestfamilymadison.com
  * @since   1.0.0
- * @package my_plugin_name
+ * @package mdm_syndication
  *
  * @wordpress-plugin
  * Plugin Name: MDM Content Syndication
- * Plugin URI:  https://github.com/bob-moore/WP-Plugin-Scaffolding
+ * Plugin URI:  https://github.com/MDMDevOps/mdm-syndication
+ * GitHub Plugin URI: https://github.com/afragen/github-updater
  * Description: Share an syndicate content across different platforms
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Mid-West Family
  * Author URI:  https://www.midwestfamilymadison.com
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain: my_plugin_name
+ * Text Domain: mdm_syndication
  */
 
 namespace mdm\syndication;
@@ -28,7 +29,7 @@ if ( !defined( 'WPINC' ) ) {
 	die( 'Abort' );
 }
 
-if( !class_exists( 'MyCustomPlugin' ) ) {
+if( !class_exists( 'MDMSyndication' ) ) {
 
 	require_once __DIR__ . '/vendor/autoload.php';
 
@@ -38,7 +39,7 @@ if( !class_exists( 'MyCustomPlugin' ) ) {
 			/**
 			 * Register the text domain
 			 */
-			load_plugin_textdomain( 'my_plugin_name', false, basename( dirname( __FILE__ ) ) . '/languages' );
+			load_plugin_textdomain( 'mdm_syndication', false, basename( dirname( __FILE__ ) ) . '/languages' );
 			/**
 			 * Register activation hook
 			 */

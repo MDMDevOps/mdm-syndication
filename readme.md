@@ -1,8 +1,11 @@
-# WordPress Plugin Scaffolding
+# Content Syndication
 
-A standardized, organized, object-oriented foundation for rapid plugin development. Inspired by the [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate) and informed by years of professional plugin development.
+A plugin for syndicating content around our network of sites
 
 ## Features
+
+* Embed content remotely via an embed tag
+* Enable embedding of other sites also running this plugin (enqueing scripts and FL Builder support)
 
 * The Boilerplate is based on the [Plugin API](http://codex.wordpress.org/Plugin_API), [Coding Standards](http://codex.wordpress.org/WordPress_Coding_Standards), and [Documentation Standards](https://make.wordpress.org/core/handbook/best-practices/inline-documentation-standards/php/).
 * All classes, functions, and variables are documented so that you know what you need to change.
@@ -11,19 +14,14 @@ A standardized, organized, object-oriented foundation for rapid plugin developme
 
 ## Installation
 
-WP Plugin Scaffolding can be installed directly into your plugins folder as is. After that, you will want to rename your folder and main plugin file, the namespace, and the main class.
-
-* rename folder from `WP-Plugin-Scaffolding` to `my-plugin-name`
-* rename main file from `plugin-scaffolding.php` to `my-plugin-name.php`
-* find & replace `mdm\syndication` to `mypackage\mynamespace` across all files
-* replace all instances of `wpcl\\pluginscaffolding\\` to `mypackage\\mynamespace\\` in composer.json
-* replace `PluginScaffolding` to `MyPluginClass` in the main plugin file
-* change package and other information in documentation as necessary
-* finally, run `composer install` which will configure autoloading and in turn run `npm install` to install node_modules
-
-
-It is safe to activate the plugin at this point. The plugin includes a sample custom post type, sample custom taxonomy, and a sample custom widget. If these are not going to be used, simply delete the respective files.
+1) Install [Github Plugin Updater](https://github.com/afragen/github-updater)
+2) Go to setting => github updater, and follow the instructions to install from this repository
 
 ## ToDo
 
-This is a living project, and there are several items not yet complete. The major issue to be tackled is documentation. Including detailed usage instructions.
+This is a living project, so expect updates.
+
+Features still to be added:
+
+* A widget for easy embedding in widget areas
+* RSS / Rest API sharing of content between sites - This feature will need to address several issues to be viable.
